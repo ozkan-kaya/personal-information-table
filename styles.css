@@ -1,0 +1,274 @@
+*{
+  font-family: "Roboto", Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background-color: rgb(179,179,179);
+  padding-bottom: 25px;
+}
+
+.inline-block{
+  display: inline-block;
+}
+
+.header{
+  position: fixed;
+  background-color: black;
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+}
+
+.header .ankageo-logo{
+  height: 25px;
+}
+
+.main{
+  display: inline-block;
+  margin-top: 70px;
+  width: 100%;
+}
+
+.menus-div{
+  width: 100%;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.menu-logo{
+  height: 20%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-bottom: 40px;
+}
+
+.menu-logo img{
+  margin-right: 20px;
+  height: 25px;
+}
+
+
+.create-user-menu, .edit-user-menu{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  height: 80%;
+  background: rgb(211,211,211) url("https://ankageo.com/wp-content/uploads/2021/04/cropped-site-icon-1.png") no-repeat 20px 20px;
+  background-size: 230px;
+  box-shadow: 0 0 20px #e0422c;
+  border-radius: 10px;
+}
+
+.edit-user-menu{
+  background-color: rgb(78,78,78);
+}
+
+.edit-user-menu .menu-logo{
+  filter: brightness(0) invert(1);
+}
+
+.inputs-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 50%;
+  margin: 0 10px;
+}
+
+.create-user-menu button, .edit-user-menu button{
+  height: 25px;
+  border: none;
+  color: white;
+  background-color: black;
+  padding: 0 5px;
+  border-radius: 4px;
+  transition: color .2s;
+}
+
+.create-user-menu button:hover, .edit-user-menu button:hover{
+  color: #3078ff;
+  transition: color .2s;
+}
+
+.create-user-menu button:active, .edit-user-menu button:active{
+  opacity: .7;
+}
+
+.input-tags{
+  height: 100%;
+}
+
+.inputs{
+  height: 100%;
+  width: 80%;
+}
+
+.inputs-div p{
+  margin-bottom: 7px;
+  height: 25px;
+  line-height: 25px;
+  font-weight: 500;
+}
+
+.id{
+  width: 226px;
+}
+
+.inputs-div input{
+  width: 300px;
+  height: 25px;
+  margin-bottom: 7px;
+  border: none;
+  border-radius: 5px;
+  padding: 0 5px;
+}
+
+.send-div{
+  margin: 0 10px;
+  font-weight: 500;
+}
+
+.database-wrapper{
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.database-header{
+  width: 90%;
+  height: 100px;
+  background-color: rgb(215,75,56);
+}
+
+.database-personal-info{
+  width: 90%;
+}
+.database-personal-info .personal {
+  width: 100%;
+}
+
+.database-tags{
+  width: 90%;
+}
+
+.database-header-topside{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 20px;
+}
+
+.database-header input{
+  border: none;
+  height: 30px;
+  width: 290px;
+  padding: 0 5px;
+}
+
+.database-header button{
+  margin-left: -4px;
+  border: none;
+  height: 30.3px;
+  padding: 0 5px;
+  transition: color .2s;
+}
+
+.database-header button:hover{
+  transition: color .2s;
+  color: darkred;
+}
+
+.database-header button:active{
+  opacity: .6;
+}
+
+.delete-button{
+  color: white;
+  background-color: black;
+}
+
+.delete-all-button{
+  color: white;
+  background-color: rgb(95,95,95);
+}
+
+.database-header p {
+  font-size: 12px;
+  color: white;
+  text-align: right;
+  margin-right: 20px;
+}
+
+.database-tags, .database-personal-info .personal{
+  display: flex;
+  justify-content: space-between;
+  height: 25px;
+  line-height: 25px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 10px;
+}
+
+.database-tags{
+  background-color: #dfddde;
+}
+
+.database-personal-info .personal{
+  background-color: white;
+}
+
+.database-tags p, .database-personal-info .personal p{
+  width: 200px;
+}
+
+.personal{
+  border-bottom: 1px solid rgb(179,179,179);
+}
+
+.personal .icons{
+  text-align: center;
+  height: 25px;
+  line-height: 27px;
+  font-size: 18px;
+  width: 200px;
+}
+
+.personal .icons i{
+  margin: 0 5px;
+}
+
+.personal .icons .bx-edit:hover{
+  color: blue;
+}
+
+.personal .icons .bx-trash:hover{
+  color: #ce0000;
+}
+
+@media only screen and (max-width: 1000px) {
+  .main{
+    height: 775px;
+  }
+
+  .menus-div{
+    margin-top: 50px;
+    height: 675px;
+    flex-direction: column;
+  }
+
+  .create-user-menu{
+    margin-bottom: 40px;
+  }
+
+}
